@@ -1,8 +1,8 @@
 import sqlite3
 import pandas as pd
 
-df = pd.read_csv('df.csv')
-conn = sqlite3.connect('mydb')
+df = pd.read_csv('mydata.csv')
+conn = sqlite3.connect('mydb.db')
 c = conn.cursor()
 
 c.execute('''DROP TABLE IF EXISTS  mydata''')
@@ -20,3 +20,4 @@ c.execute('''
 df.to_sql('mydata', conn, index=False, if_exists='replace')
 
 conn.commit()
+conn.close()
