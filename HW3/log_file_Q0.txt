@@ -1,0 +1,39 @@
+2022-01-03 22:07:41,659 [INFO] lithops.config -- Lithops v2.5.9.dev0
+2022-01-03 22:07:41,660 [DEBUG] lithops.config -- Loading Serverless backend module: aws_lambda
+2022-01-03 22:07:41,661 [DEBUG] lithops.config -- Loading Storage backend module: aws_s3
+2022-01-03 22:07:41,662 [DEBUG] lithops.storage.backends.aws_s3.aws_s3 -- Creating S3 client
+2022-01-03 22:07:41,668 [INFO] lithops.storage.backends.aws_s3.aws_s3 -- S3 client created - Region: us-east-1
+2022-01-03 22:07:41,669 [DEBUG] lithops.serverless.backends.aws_lambda.aws_lambda -- Creating AWS Lambda client
+2022-01-03 22:07:41,669 [DEBUG] lithops.serverless.backends.aws_lambda.aws_lambda -- Creating Boto3 AWS Session and Lambda Client
+2022-01-03 22:07:41,792 [INFO] lithops.serverless.backends.aws_lambda.aws_lambda -- AWS Lambda client created - Region: us-east-1
+2022-01-03 22:07:41,792 [DEBUG] lithops.invokers -- ExecutorID 02e085-3 - Invoker initialized. Max workers: 1000
+2022-01-03 22:07:41,792 [DEBUG] lithops.invokers -- ExecutorID 02e085-3 - Serverless invoker created
+2022-01-03 22:07:41,792 [DEBUG] lithops.executors -- Function executor for aws_lambda created with ID: 02e085-3
+2022-01-03 22:07:41,800 [INFO] lithops.invokers -- ExecutorID 02e085-3 | JobID A000 - Selected Runtime: python39 - 256MB
+2022-01-03 22:07:41,801 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-03 22:07:41,802 [DEBUG] lithops.job.job -- ExecutorID 02e085-3 | JobID A000 - Serializing function and data
+2022-01-03 22:07:41,803 [DEBUG] lithops.job.serialize -- Referenced modules: None
+2022-01-03 22:07:41,803 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-03 22:07:41,804 [DEBUG] lithops.job.job -- ExecutorID 02e085-3 | JobID A000 - Uploading function and modules to the storage backend
+2022-01-03 22:07:42,824 [DEBUG] lithops.storage.backends.aws_s3.aws_s3 -- PUT Object lithops.jobs/02e085-3/8df0dcd85b943f53db99eff47f3d4a96.func.pickle - Size: 564.0B - OK
+2022-01-03 22:07:42,840 [DEBUG] lithops.job.job -- ExecutorID 02e085-3 | JobID A000 - Data per activation is < 8.0KiB. Passing data through invocation payload
+2022-01-03 22:07:42,840 [INFO] lithops.invokers -- ExecutorID 02e085-3 | JobID A000 - Starting function invocation: hello_world() - Total: 1 activations
+2022-01-03 22:07:42,840 [DEBUG] lithops.invokers -- ExecutorID 02e085-3 | JobID A000 - Worker processes: 1 - Chunksize: 1
+2022-01-03 22:07:42,844 [DEBUG] lithops.invokers -- ExecutorID 02e085-3 - Async invoker 0 started
+2022-01-03 22:07:42,850 [DEBUG] lithops.invokers -- ExecutorID 02e085-3 | JobID A000 - Free workers: 1000 - Going to run 1 activations in 1 workers
+2022-01-03 22:07:42,848 [DEBUG] lithops.invokers -- ExecutorID 02e085-3 - Async invoker 1 started
+2022-01-03 22:07:42,857 [INFO] lithops.invokers -- ExecutorID 02e085-3 | JobID A000 - View execution logs at C:\Users\guypa\AppData\Local\Temp\lithops\logs\02e085-3-A000.log
+2022-01-03 22:07:42,862 [DEBUG] lithops.monitor -- ExecutorID 02e085-3 - Starting Storage job monitor
+2022-01-03 22:07:42,865 [INFO] lithops.wait -- ExecutorID 02e085-3 - Getting results from functions
+2022-01-03 22:07:43,790 [DEBUG] lithops.invokers -- ExecutorID 02e085-3 | JobID A000 - Calls 00000 invoked (0.934s) - Activation ID: dda740a3-7038-4553-b867-8d22b1edbebf
+2022-01-03 22:07:45,254 [DEBUG] lithops.monitor -- ExecutorID 02e085-3 - Pending: 1 - Running: 0 - Done: 0
+2022-01-03 22:07:47,661 [DEBUG] lithops.monitor -- ExecutorID 02e085-3 - Pending: 0 - Running: 0 - Done: 1
+2022-01-03 22:07:47,661 [DEBUG] lithops.monitor -- ExecutorID 02e085-3 - Storage job monitor finished
+2022-01-03 22:07:47,936 [DEBUG] lithops.future -- ExecutorID 02e085-3 | JobID A000 - Got status from call 00000 - Activation ID: dda740a3-7038-4553-b867-8d22b1edbebf - Time: 0.27 seconds
+2022-01-03 22:07:48,126 [DEBUG] lithops.future -- ExecutorID 02e085-3 | JobID A000 - Got output from call 00000 - Activation ID: dda740a3-7038-4553-b867-8d22b1edbebf
+2022-01-03 22:07:48,126 [INFO] lithops.executors -- ExecutorID 02e085-3 - Cleaning temporary data
+2022-01-03 22:07:48,148 [DEBUG] lithops.executors -- ExecutorID 02e085-3 - Finished getting results
+2022-01-03 22:07:48,148 [DEBUG] lithops.invokers -- ExecutorID 02e085-3 - Stopping async invokers
+Hello World!
+2022-01-03 22:07:48,150 [DEBUG] lithops.invokers -- ExecutorID 02e085-3 - Async invoker 1 finished
+2022-01-03 22:07:48,150 [DEBUG] lithops.invokers -- ExecutorID 02e085-3 - Async invoker 0 finished
